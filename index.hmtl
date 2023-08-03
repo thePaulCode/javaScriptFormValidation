@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e6710e2921.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <form id="form">
+
+            <div class="social">
+
+                <div class="title">Início</div>
+                <div class="question">
+                    Já tem uma conta? <br />
+                    <span>Cadastre-se</span>
+                </div>
+
+            
+
+                <div class="btn">
+                    <div class="btn-1">
+                        <img 
+                        src="https://th.bing.com/th/id/OIP.AfKMLf4rKX7EqOSAVpujIQHaEK?pid=ImgDet&rs=1" 
+                        alt="google"
+                        width="40">
+                    </div>
+
+                    <div class="btn-2">
+                        <img 
+                        src="https://th.bing.com/th/id/OIP.Ua5AXhtGRgPuisZVmetclQHaFL?pid=ImgDet&rs=1" 
+                        alt="facebook"
+                        width="40">
+                    </div>
+                </div>
+
+                <div class="or">Ou</div>
+
+            </div>
+            <!-- /**
+                * ! Nome do usuário Input 
+            **/ -->
+            <div><label for="username">Nome do usuário</label>
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="username" id="username" placeholder="Insira seu nome">
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <i class="fa-solid fa-circle-check success-icon"></i>
+
+                <div class="error"></div>
+
+            </div>
+
+            <!-- /**
+                * ! Email Input 
+            **/ -->
+            <div>
+                <label for="email">Email do usuário</label>
+                <i class="fa-regular fa-envelope"></i>
+                <input type="text" name="email" id="email" placeholder="meuemail@email.com">
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <i class="fa-solid fa-circle-check success-icon"></i>
+
+                <div class="error"></div>
+            </div>
+
+            <!-- /**
+                * ! Senha input
+            **/ -->
+            <div>
+                <label for="password">Senha do usuário</label>
+                <i class="fa-solid fa-lock"></i>
+                <input type="text" name="password" id="password" placeholder="Insira sua senha">
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <i class="fa-solid fa-circle-check success-icon"></i>
+
+                <div class="error"></div>
+            </div>
+
+            <button type="submit" id="submit">Enviar</button>
+        </form>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
