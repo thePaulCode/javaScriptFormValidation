@@ -32,49 +32,36 @@ errorMsg = classes("error");
 form.addEventListener("submit", (e)=>{
     e.preventDefault();
 
-    //inserir args na função engine
     engine(username, 0, "Por favor, digite seu nome");
-    engine(email, 1, "Por favor, digite seu email");
+    engine(email, 1, "Por favor, digite seu e-mail");
     engine(password, 2, "Por favor, digite sua senha");
 })
 
 
 /* 3 engine function */
 
-let engine = (id, serial, message) => {
+const engine = (id, serial, message) => {
 
-        if (id.value.trim() === ""){
+if (id.value.trim() === ""){
 
-            errorMsg[serial].innerHTML = message;
-            faiulureIcon[serial].style.opacity = "1";
-            successIcon[serial].style.opacity = "0";
-        
-
-        }
-        else {
-
-
-            errorMsg[serial].innerHTML = "";
-            faiulureIcon[serial].style.opacity = "0";
-            successIcon[serial].style.opacity = "1";
-
-        }
-
-   
+    errorMsg[serial].innerHTML = message;
+    faiulureIcon[serial].style.opacity = "1";
+    successIcon[serial].style.opacity = "0";
 
 }
+else {
+
+    errorMsg[serial].innerHTML = "";
+    faiulureIcon[serial].style.opacity = "0";
+    successIcon[serial].style.opacity = "1";
+
+}
+
+}
+
+
+      
 /*  */
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* TESTS  */
